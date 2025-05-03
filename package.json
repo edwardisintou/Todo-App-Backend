@@ -2,6 +2,7 @@
     "name": "todo-app-backend",
     "version": "1.0.0",
     "main": "index.js",
+    "type": "module",
     "scripts": {
         "start": "node backend/server",
         "dev": "node --watch --env-file=.env backend/server"
@@ -19,8 +20,11 @@
     "homepage": "https://github.com/edwardisintou/Todo-App-Backend#readme",
     "description": "",
     "dependencies": {
+        "bcryptjs": "^3.0.2",
         "colors": "^1.4.0",
         "express": "^5.1.0",
+        "express-async-handler": "^1.2.0",
+        "jsonwebtoken": "^9.0.2",
         "mongoose": "^8.14.1"
     }
 }
