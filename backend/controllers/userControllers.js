@@ -2,7 +2,7 @@ import asyncHandler from "express-async-handler";
 import jwt from "jsonwebtoken";
 import bcrypt, { hashSync } from "bcryptjs";
 import User from "../models/userModel.js";
-import generateToken from "../utils/tokenGenerator.js";
+import generateToken from "../utils.js";
 
 // @desc    Register user
 // @route   POST /api/users
