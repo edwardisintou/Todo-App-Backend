@@ -3,7 +3,7 @@ import colors from "colors";
 import path from "path";
 import { fileURLToPath } from "url";
 import users from "./routes/userRoutes.js";
-import errorHandler from "./middleware/error.js";
+import errorHandler from "./middleware/errorMiddleware.js";
 import connectDB from "./config/db.js";
 const PORT = process.env.PORT || 8000;
 
