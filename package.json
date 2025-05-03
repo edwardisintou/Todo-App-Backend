@@ -1,0 +1,26 @@
+{
+    "name": "todo-app-backend",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+        "start": "node backend/server",
+        "dev": "node --watch --env-file=.env backend/server"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/edwardisintou/Todo-App-Backend.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/edwardisintou/Todo-App-Backend/issues"
+    },
+    "homepage": "https://github.com/edwardisintou/Todo-App-Backend#readme",
+    "description": "",
+    "dependencies": {
+        "colors": "^1.4.0",
+        "express": "^5.1.0",
+        "mongoose": "^8.14.1"
+    }
+}
