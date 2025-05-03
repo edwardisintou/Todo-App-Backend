@@ -3,7 +3,7 @@ import colors from "colors";
 import path from "path";
 import { fileURLToPath } from "url";
 import users from "./routes/userRoutes.js";
-import items from "./routes/itemRoutes.js";
+import tasks from "./routes/taskRoutes.js";
 import errorHandler from "./middleware/errorMiddleware.js";
 import connectDB from "./config/db.js";
 const PORT = process.env.PORT || 8000;
@@ -24,7 +24,7 @@ app.use(express.urlencoded({ extended: false }));
 
 // Route
 app.use("/api/users", users);
-app.use("/api/items", items);
+app.use("/api/tasks", tasks);
 
 // Error handler
 app.use(errorHandler);
