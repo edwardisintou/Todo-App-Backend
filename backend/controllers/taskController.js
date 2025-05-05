@@ -15,12 +15,12 @@ const getTasks = asyncHandler(async (req, res, next) => {
 // @route   POST /api/tasks
 // @access  Private
 const addTask = asyncHandler(async (req, res, next) => {
-    if (!req.body.item) {
-        throw new Error("Please add an item field");
+    if (!req.body.title) {
+        throw new Error("Please add an title field");
     }
 
     const task = await Task.create({
-        item: req.body.item,
+        title: req.body.title,
         user: req.user.id,
     });
 

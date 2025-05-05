@@ -7,7 +7,7 @@ const taskSchema = mongoose.Schema(
             require: true,
             ref: "User",
         },
-        item: {
+        title: {
             type: String,
             require: [true, "Please add a task"],
         },
